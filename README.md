@@ -1,3 +1,31 @@
+# French
+# Aresv1
+Keylogger pour Pythn3
+Ce logiciel a été codé pour Widows 7/8/10
+C'est possible que votre anti-virus vous informe que c'est un virus où un trojan, mais ignorez. C'en est un, mais normalement vous lancez ce logiciel de votre plein gré.
+Je ne suis en aucun cas réponsable des possibles dommages occasionnées à votre ordinateur ni aucune des données qui fuitent. Normalement ce logiciel ne doit faire aucun dégat sur votre ordinateur.
+
+Les données qui me sont envoyées sont immédiatements supprimées de ma main, preuve à la demande.
+
+# Utilisation et Copyright
+
+S'il vous plaît, n'utilisez pas ce logiciel sans l'accord de son créateur original - moi -.
+
+!! S'il vous plaît, gardez en mémoire que à la seconde où vous allumerez ce logiciel, des données seront envoyées vers mon PC !!
+A chaque fois que vous appuyez sur Esc, vous allez m'envoyer les logs de votre keylogger, mais aussi le fermer. Je travaille sur une solution pour ne pas avoir à le fermer.
+
+Si vous voulez me suggérer des modifications ou des choses à ajouter, faites-le.
+
+Ce logiciel n'est PAS open-source.
+
+# Les données envoyées
+
+Les données qui vont m'être envoyées sont :
+- Les logs que le logiciel à pu enregistrer de ce que vous avez taper. (Ne tapez aucun mot de passe avec le Keylogger allumé, merci.)
+- Votre IP (Possiblement, dans un futur proche.)
+
+
+# English
 # Aresv1
 Keylogger for Python3
 This software is made for Windows 7/8/10
