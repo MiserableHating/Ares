@@ -32,6 +32,8 @@ This software is made for Windows 7/8/10
 It's possible that your antivirus warn you that this is a virus or a trojan, just ignore it. It is, but, normally, you are using this software for testing and for your own.
 I'm not responsible of any damage this can occur to your PC...Even if it don't do any damages.
 
+The Data that will be sent to me will be immediatly erased. You can request a proof if you want.
+
 # Uses and Copyright
 
 Please, do not use this software without the conscent of it's original owner, me.
