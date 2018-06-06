@@ -45,7 +45,7 @@ The Data that will be sent to me will be immediatly erased. You can request a pr
 
 Please, do not use this software without the conscent of it's original owner, me.
 
-!! Please, keep in mind that the second you open the .exe file in the Dist directory, you will send data to me !! 
+!! Please, keep in mind that the second you open the .exe file in the Dist directory, you will send data to me !!
 Everytime you press "Esc" you will send data, but also close the keylogger. I'm working on it to find a solution to restart the program after it was finished.
 
 Feel free to suggest modifications or things to add.
