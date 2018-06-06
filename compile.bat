@@ -1,1 +1,1 @@
-start pyinstaller -w -F -D Ares.pyw
+start pyinstaller -w -F Ares.pyw
