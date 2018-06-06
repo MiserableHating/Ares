@@ -1,4 +1,4 @@
-# French
+# Français
 # Aresv1
 Keylogger pour Pythn3
 Ce logiciel a été codé pour Widows 7/8/10
