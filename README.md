@@ -1,6 +1,6 @@
 # Français
 # Aresv1
-Keylogger pour Pythn3
+Keylogger pour Python3
 Ce logiciel a été codé pour Widows 7/8/10
 C'est possible que votre anti-virus vous informe que c'est un virus où un trojan, mais ignorez. C'en est un, mais normalement vous lancez ce logiciel de votre plein gré.
 Je ne suis en aucun cas réponsable des possibles dommages occasionnées à votre ordinateur ni aucune des données qui fuitent. Normalement ce logiciel ne doit faire aucun dégat sur votre ordinateur.
