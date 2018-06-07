@@ -1,4 +1,4 @@
-# About
+# A propos
 Ares est un Keylogger codé en python 3.5.6 est facile d'utilisation, il va envoyer les logs enregistrées + votre ip à l'adresse indiquée dans le fichier.
 Il ne fait aucun dégat sur l'ordinateur infecté et ne se lance pas (pour le moment) au démarrage de l'ordinateur.
 Il est détecté normalement par tous les anti-virus, pour le moment (Normalement, dans la version v5 ou plus).
