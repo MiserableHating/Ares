@@ -7,7 +7,7 @@ Il est détecté normalement par tous les anti-virus, pour le moment (Normalemen
 
 Pour plus d'informations sur le copyright et la license, allez voir le fichier "License" situé plus haut. (En anglais)
 
-# Ares v2.0.0.0
+# Ares v2.1.0.0 (Pre)
 Pour installer et compiler le logiciel correctement, vous devrez :
 - Dans le fichier Ares.pyw, modifiez avec votre email et votre mot de passe les lignes 31, 32 et 33
 - Avoir Python 3.5.6 ou une version plus avancée : https://www.python.org/downloads/
